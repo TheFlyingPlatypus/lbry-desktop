@@ -453,6 +453,8 @@ export default React.memo<Props>(function VideoJs(props: Props) {
         src: source,
         type: type,
       });
+
+      player.bigPlayButton.hide();
     });
   }, [source, reload]);
 
